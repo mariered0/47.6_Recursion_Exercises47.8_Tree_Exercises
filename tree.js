@@ -32,6 +32,24 @@ class Tree {
       }
     }
     return res;
+
+    /**Springboard solution with recursion */
+
+    // if (!this.root) return 0;
+
+    // let total = this.root.val;
+
+    // function sumHelper(node) {
+    //   for (let child of node.children) {
+    //     total += child.val;
+    //     if (child.children.length > 0) {
+    //       sumHelper(child);
+    //     }
+    //   }
+    // }
+
+    // sumHelper(this.root);
+    // return total;
     
   }
 
@@ -55,6 +73,24 @@ class Tree {
       }
     }
     return count;
+
+    /**Springboard solution with recursion */
+    // if (!this.root) return 0;
+
+    // let count = this.root.val % 2 === 0 ? 1 : 0;
+
+    // function countEvensHelper(node) {
+    //   for (let child of node.children) {
+    //     if (child.val % 2 === 0) count++;
+    //     if (child.children.length > 0) {
+    //       countEvensHelper(child);
+    //     }
+    //   }
+    // }
+
+    // countEvensHelper(this.root);
+    // return count;
+
   }
 
   /** numGreater(lowerBound): return a count of the number of nodes
@@ -77,6 +113,23 @@ class Tree {
     }
     return res;
   }
+
+  /**Springboard solution with recursion */
+  // if (!this.root) return 0;
+
+  //   let count = this.root.val > lowerBound ? 1 : 0;
+
+  //   function countGreaterHelper(node) {
+  //     for (let child of node.children) {
+  //       if (child.val > lowerBound) count++;
+  //       if (child.children.length > 0) {
+  //         countGreaterHelper(child);
+  //       }
+  //     }
+  //   }
+
+  //   countGreaterHelper(this.root);
+  //   return count; 
 }
 
 module.exports = { Tree, TreeNode };
